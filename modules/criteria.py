@@ -2,6 +2,11 @@
 
 """ module: criteria """
 
+from modules import marks as mark
+
+markMachine = None
+markHuman = None
+
 def victory_for(board,sign):
 	""" Checks the victory and returns the winner (the user or the machine/computer)
 		or None if the game is not ended.
@@ -20,9 +25,20 @@ def victory_for(board,sign):
 			or None if the game is not ended.
 	"""
 
-	if sign == "X":	# are we looking for X?
+	#region Marks
+	global markMachine
+	global markHuman
+
+	if markMachine is None:
+		markMachine = mark.machine()
+
+	if markHuman is None:
+		markHuman = mark.human()
+	#endregion
+
+	if sign == markMachine:	# are we looking for X?
 		who = 'me'	# yes - it's machine's/computer's side
-	elif sign == "O": # ... or for O?
+	elif sign == markHuman: # ... or for O?
 		who = 'you'	# yes - it's our side
 	else:
 		who = None	# we should not fall here!
@@ -55,8 +71,8 @@ def check_victory(victory):
 	"""
 
 	if victory == 'you':
-		return "You won!"
+		return "\nYou won!\n"
 	elif victory == 'me':
-		return "I won"
+		return "\nI won\n"
 	else:
-		return "Tie!"
+		return "\nTie!\n"

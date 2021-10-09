@@ -4,6 +4,10 @@
 
 from random import randrange
 from modules import board
+from modules import marks as mark
+
+markMachine = None
+markHuman = None
 
 def user(game_board):
 	""" Gets the user's input and check the game field availability for the movement.
@@ -24,6 +28,17 @@ def user(game_board):
 			the row and the column position inside this tuple.
 	"""
 
+	#region Marks
+	global markMachine
+	global markHuman
+
+	if markMachine is None:
+		markMachine = mark.machine()
+
+	if markHuman is None:
+		markHuman = mark.human()
+	#endregion
+
 	ok = False	# fake assumption to enter the loop
 	while not ok:
 		move = input("Enter your move: ") 
@@ -35,7 +50,7 @@ def user(game_board):
 		row = move // 3 	# cell's row
 		col = move % 3		# cell's column
 		sign = game_board[row][col]	# check the selected position
-		ok = sign not in ['O','X'] # symbols for the tic tac toe
+		ok = sign not in [markHuman,markMachine] # symbols for the tic tac toe
 		if not ok:	# it's already occupied - input another one again
 			print("Field already occupied - enter your movement again!")
 			continue
@@ -58,6 +73,7 @@ def machine(game_board):
 			the programmer must know or guess the new position of 
 			the row and the column position inside this tuple.
 	"""
+	
 	free = board.make_list_of_free_fields(game_board) # make a list of free fields
 	cnt = len(free)
 	if cnt > 0:	# if the list is not empty, choose a place for the machine movement and set it
