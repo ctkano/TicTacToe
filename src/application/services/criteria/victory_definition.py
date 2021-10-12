@@ -39,7 +39,7 @@ class Victory_Definition:
                 return who
             if board[rc][rc] != sign: # check 1st diagonal
                 cross1 = False
-            if board[2 - rc][2 - rc] != sign: # check 2nd diagonal
+            if board[rc][2 - rc] != sign: # check 2nd diagonal
                 cross2 = False
 
         if cross1 or cross2:
