@@ -19,7 +19,7 @@ class Start:
 			reset = input("Do you want to play again? Type Y for Yes or N for No and the game will end: ")
 
 			if reset.upper() == "Y" or reset.upper() == "YES":
-				self.start() # restart the game
+				self.now() # restart the game
 			else:
 				sys.exit() # exit system
 		except KeyboardInterrupt:
