@@ -20,7 +20,7 @@ This project requires previous software installation before running it.
 
 It is possible to use any code editor you already use, but to make it easier, you can open it in [Visual Studio Code](https://code.visualstudio.com/). It is also possible to use IDLE (Integrated Development and Learning Environment).
 
-If you choose to open it in Visual Studio Code, you can open through here: 
+You can find and open the project here: 
 
 [![Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/ctkano/TicTacToe)
 
