@@ -1,8 +1,8 @@
 #! /usr/bin/env python3
 
-class Victory_Check:
+class Winning_Message:
 
-    def check_victory(self, victory):
+    def check_victory_message(self, victory):
         """ Checks who is the winner and returns the text representing the victory status.
 
             Parameters

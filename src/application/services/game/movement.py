@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
-from src.application.helper import movement_human
-from src.application.helper import movement_machine
+from src.application.helper.movement import movement_human
+from src.application.helper.movement import movement_machine
 
 class Movement:
 
@@ -26,7 +26,7 @@ class Movement:
                 the row and the column position inside this tuple.
 		"""
 
-        match type_of_turn.lower():
+        match "".join(type_of_turn.lower()):
             case "machine":
                 return movement_machine.Movement_Machine().move(game_board)
             case "human":
