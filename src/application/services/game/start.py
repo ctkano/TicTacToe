@@ -2,7 +2,7 @@
 
 import sys
 from datetime import date
-from src.application.services.game import tic_tac_toe as tictactoe
+from src.application.facade import tic_tac_toe as tictactoe
 
 class Start:
 	def now(self):
