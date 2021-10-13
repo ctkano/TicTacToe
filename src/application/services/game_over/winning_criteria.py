@@ -2,9 +2,9 @@
 
 from src.application.services.game import marks
 
-class Victory_Definition:
+class Winning_Criteria:
 
-    def victory_for(self, board,sign):
+    def check_victory_for(self, board,sign):
         """ Checks the victory and returns the winner (the user or the machine/computer)
             or None if the game is not ended.
 
