@@ -6,8 +6,8 @@ from src.application.services.board import board_base
 from src.application.services.board import board_display
 from src.application.services.board import free_fields
 from src.application.extensions import console
-from src.application.services.criteria import victory_check
-from src.application.services.criteria import victory_definition
+from src.application.services.game_over import winning_criteria
+from src.application.services.game_over import winning_message
 
 class Tic_Tac_Toe:
 
@@ -54,9 +54,9 @@ class Tic_Tac_Toe:
             self.__game_board_movement(is_human_turn)
 
             if is_human_turn:
-                victory = victory_definition.Victory_Definition().victory_for(__game_board,marks.Marks().get("human"))
+                victory = winning_criteria.Winning_Criteria().check_victory_for(__game_board,marks.Marks().get("human"))
             else: # machine turn
-                victory = victory_definition.Victory_Definition().victory_for(__game_board,marks.Marks().get("machine"))
+                victory = winning_criteria.Winning_Criteria().check_victory_for(__game_board,marks.Marks().get("machine"))
             if victory != None:
                 break
 
@@ -68,4 +68,4 @@ class Tic_Tac_Toe:
 
         board_display.Board_Display().display(__game_board)
 
-        print(victory_check.Victory_Check().check_victory(victory))
+        print(winning_message.Winning_Message().check_victory_message(victory))
