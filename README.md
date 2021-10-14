@@ -1,4 +1,4 @@
-# Tic-Tac-Toe [![made-with-python](https://img.shields.io/badge/Made%20with-Python-2b5b84.svg)](https://www.python.org/) [![python](https://img.shields.io/badge/Python-3.10%20+-2b5b84.svg?logo=python&logoColor=ffd343)](https://www.python.org/downloads/) [![MIT license](https://img.shields.io/badge/License-MIT-2b5b84.svg)](https://github.com/ctkano/TicTacToe/blob/5c7485376491336f0e405439f8b0e5b33445c67f/LICENSE)
+# Tic-Tac-Toe [![made-with-python](https://img.shields.io/badge/Made%20with-Python-2b5b84.svg "Made with Python")](https://www.python.org/) [![python](https://img.shields.io/badge/Python-3.10%20+-2b5b84.svg?logo=python&logoColor=ffd343 "Python version 3.10 +")](https://www.python.org/downloads/) [![MIT license](https://img.shields.io/badge/License-MIT-2b5b84.svg "License MIT")](https://github.com/ctkano/TicTacToe/blob/5c7485376491336f0e405439f8b0e5b33445c67f/LICENSE)
 
 Tic-tac-toe, also known as 'noughts and crosses' or 'Xs and Os' or '*jogo da velha*' or '*jogo do galo*' or 'three in line' and many other names, this classic game is back again and you can play against your own machine.
 
