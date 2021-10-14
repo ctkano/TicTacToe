@@ -26,7 +26,7 @@ You can find and open the project here:
 
 ## Running this game
 
-### ![Linux](https://img.shields.io/badge/OS-Linux-2b5b84.svg?logo=linux) / ![macOS](https://img.shields.io/badge/OS-macOS-2b5b84.svg?logo=apple) :
+### ![Linux](https://img.shields.io/badge/OS-Linux-2b5b84.svg?logo=linux&logoColor=white) / ![macOS](https://img.shields.io/badge/OS-macOS-2b5b84.svg?logo=apple) :
 ---
 Open the terminal, navigate to the root directory of this project, then type type: 
 ```terminal
