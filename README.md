@@ -2,9 +2,13 @@
 
 Tic-tac-toe, also known as 'noughts and crosses' or 'Xs and Os' or '*jogo da velha*' or '*jogo do galo*' or 'three in line' and many other names, this classic game is back again and you can play against your own machine.
 
+![Tic-Tac-Toe](https://user-images.githubusercontent.com/47825598/137361729-ec1c5576-7719-43bd-adf6-51a6df95d03b.png "Tic-Tac-Toe")
+
 Make a sequence of 'O' (horizontally, vertically or diagonally) and do not allow the machine to form the sequence of 'X'. Otherwise the machine will beat you.
 
 Are you ready for the game? Prepare your strategy...
+
+![Tic-Tac-Toe: Start](https://user-images.githubusercontent.com/47825598/137362254-9c0310e4-8d1c-4d13-bf4f-67a030e46b45.png "Tic-Tac-Toe: Start")
 
 # Let's get started
 
@@ -26,19 +30,19 @@ You can find and open the project here:
 
 ## Running this game
 
-### ![Linux](https://img.shields.io/badge/OS-Linux-2b5b84.svg?logo=linux&logoColor=white) / ![macOS](https://img.shields.io/badge/OS-macOS-2b5b84.svg?logo=apple) :
+### ![Linux](https://img.shields.io/badge/OS-Linux-2b5b84.svg?logo=linux&logoColor=white "Linux") / ![macOS](https://img.shields.io/badge/OS-macOS-2b5b84.svg?logo=apple "macOS") :
 ---
-Open the terminal, navigate to the root directory of this project, then type type: 
+Open the Terminal, navigate to the root directory of this project, then type type: 
 ```terminal
-python main.py
+python .
 ```
 
-### ![Windows](https://img.shields.io/badge/OS-Windows-2b5b84.svg?logo=windows) :
+### ![Windows](https://img.shields.io/badge/OS-Windows-2b5b84.svg?logo=windows "Windows") :
 ---
-`Shift + Right click` in the root directory of this project and open the PowerShell (or you can open the PowerShell and navigate to the root of the directory of this project), then type:
+`Shift + Right click` in the root directory of this project and open the PowerShell (or you can open the PowerShell or Command Prompt and navigate to the root of the directory of this project), then type:
 
 ```powershell
-py main.py
+python .
 ```
 
 # License 
