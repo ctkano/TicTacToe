@@ -45,6 +45,10 @@ python .
 python .
 ```
 
+# Release
+
+![Latest Release Version](https://img.shields.io/github/v/release/ctkano/TicTacToe "Latest Release Version")
+
 # License 
 
 This project is licensed under the [MIT License](https://github.com/ctkano/TicTacToe/blob/5c7485376491336f0e405439f8b0e5b33445c67f/LICENSE).
