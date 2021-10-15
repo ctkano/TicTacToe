@@ -53,4 +53,7 @@ class Tic_Tac_Toe:
 
         board_display.Board_Display().display(__game_board) # display updated board
 
-        print(winning_message.Winning_Message().check_victory_message(victory)) # print the final message
+        print(winning_message.Winning_Message().check_victory_message(victory)) # print the victory message
+        
+        if(len(free_fields.Free_Fields().make_list_of_free_fields(__game_board)) > 0):
+            print("Flawless victory!!!\n") # print the flawless victory message
