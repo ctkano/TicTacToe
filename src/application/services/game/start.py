@@ -16,7 +16,7 @@ class Start:
 			if date.today().weekday() == 4:
 				print("Yeah ... Today is finally Friday!!! C'mon consider this in the decision below...", end="\n\n")
 
-			reset = input("Do you want to play again? Type Y for Yes or N for No and the game will end: ")
+			reset = input("Do you want to play again? Type Y or YES to continue (case insensitive): ")
 
 			if reset.upper() == "Y" or reset.upper() == "YES":
 				self.now() # restart the game
