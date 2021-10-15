@@ -13,59 +13,44 @@ class Tic_Tac_Toe:
 
     __game_board = []
 
-    def __game_board_movement(self, is_human_turn):
-        """ Draws the movement according to the turn
-
-            Parameters
-            ----------
-            human_turn : bool
-                Indicates the turn, if True then it is the human turn, if False it is the machine turn.
-        """
-
-        game_board_tuple = movement.Movement().set_movement("human", __game_board) if is_human_turn else movement.Movement().set_movement("machine", __game_board) # create a tuple to represent the field that will be marked
-
-        __game_board[game_board_tuple[0]][game_board_tuple[1]] = marks.Marks().get("human") if is_human_turn else marks.Marks().get("machine") # add mark in the field
-
-        del game_board_tuple # delete tuple
-
     def game(self):
         """ Represents the Tic Tac Toe itself
         """
 
         global __game_board
 
-        console.Console().clear()
+        console.Console().clear() # clear the console
 
-        __game_board = board_base.Board_Base().empty_board()
+        __game_board = board_base.Board_Base().empty_board() # create an empty board
 
         is_human_turn = False # define the first turn as the machine
 
-        self.__game_board_movement(is_human_turn) # set the first machine movement
+        __game_board = movement.Movement().set_movement(is_human_turn, __game_board) # set the first machine movement
 
-        free = free_fields.Free_Fields().make_list_of_free_fields(__game_board)
+        free = free_fields.Free_Fields().make_list_of_free_fields(__game_board) # list free fields
 
         is_human_turn = True # define the next turn as the human
 
         while len(free):
-            console.Console().clear()
+            console.Console().clear() # clear the console
 
-            board_display.Board_Display().display(__game_board)
+            board_display.Board_Display().display(__game_board) # display updated board
 
-            self.__game_board_movement(is_human_turn)
+            __game_board = movement.Movement().set_movement(is_human_turn, __game_board) # make the movement
 
-            if is_human_turn:
-                victory = winning_criteria.Winning_Criteria().check_victory_for(__game_board,marks.Marks().get("human"))
-            else: # machine turn
-                victory = winning_criteria.Winning_Criteria().check_victory_for(__game_board,marks.Marks().get("machine"))
+            mark_for = "human" if is_human_turn else "machine"  # define the type of mark: Human or Machine
+            
+            victory = winning_criteria.Winning_Criteria().check_victory_for(__game_board,marks.Marks().get(mark_for)) # check victory
+            
             if victory != None:
-                break
+                break # someone won
 
-            is_human_turn = not is_human_turn	
+            is_human_turn = not is_human_turn # change the turn
 
-            free = free_fields.Free_Fields().make_list_of_free_fields(__game_board)
+            free = free_fields.Free_Fields().make_list_of_free_fields(__game_board) # list free fields
 
-        console.Console().clear()
+        console.Console().clear() # clear the console
 
-        board_display.Board_Display().display(__game_board)
+        board_display.Board_Display().display(__game_board) # display updated board
 
-        print(winning_message.Winning_Message().check_victory_message(victory))
+        print(winning_message.Winning_Message().check_victory_message(victory)) # print the final message
