@@ -47,7 +47,7 @@ python .
 
 # Release
 
-![Latest Release Version](https://img.shields.io/github/v/release/ctkano/TicTacToe "Latest Release Version")
+[![Latest Release Version](https://img.shields.io/github/v/release/ctkano/TicTacToe "Latest Release Version")](https://github.com/ctkano/TicTacToe/releases)
 
 # License 
 
