@@ -31,7 +31,7 @@ You can find and open the project here:
 ## Running this game
 
 ### ![Windows](https://img.shields.io/badge/OS-Windows-2b5b84.svg?logo=windows "Windows") / ![Linux](https://img.shields.io/badge/OS-Linux-2b5b84.svg?logo=linux&logoColor=white "Linux") / ![macOS](https://img.shields.io/badge/OS-macOS-2b5b84.svg?logo=apple "macOS") :
----
+
 Open the PowerShell or Command Prompt or Terminal, depending on OS you are using, navigate to the root directory of this project (if you are using Windows, you can use `Shift + Right click` in the root directory of this project and open the PowerShell right there), then type: 
 ```powershell
 python .
