@@ -10,6 +10,19 @@ Are you ready for the game? Prepare your strategy...
 
 ![Tic-Tac-Toe: Start](https://user-images.githubusercontent.com/47825598/137362254-9c0310e4-8d1c-4d13-bf4f-67a030e46b45.png "Tic-Tac-Toe: Start")
 
+# Type of application
+
+Command Line Interface, such as:
+* ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?logo=PowerShell&logoColor=white "PowerShell")
+
+* ![CMD](https://img.shields.io/badge/CMD-4D4D4D?logo=windows%20terminal&logoColor=white "CMD")
+
+* ![Terminal](https://img.shields.io/badge/Terminal-4D4D4D?logo=windows%20terminal&logoColor=white "Terminal")
+
+# Development Process
+
+This project is part of the Python learning trail, initiated by the training offered by Python Institute through the partnership between Cisco Networking Academy and Secretariat of Science and Technology of the city of Rio de Janeiro/Brazil (SMCT).
+
 # Let's get started
 
 ## Requirements
